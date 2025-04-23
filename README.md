@@ -1,114 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Light Therapy X</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fff;
-      color: #333;
-    }
-    header {
-      background-image: url('https://cdn.shopify.com/s/files/1/0680/4150/7113/files/lighttherapyherobanner.jpg');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3rem;
-      text-shadow: 1px 1px 4px black;
-    }
-    header p {
-      font-size: 1.3rem;
-      max-width: 600px;
-      margin: 20px auto;
-      text-shadow: 1px 1px 3px black;
-    }
-    .btn {
-      padding: 14px 30px;
-      background: #ff4d4d;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-      font-size: 1rem;
-    }
-    .section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .feature {
-      width: 300px;
-      background: #f7f7f7;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    .section img {
-      max-width: 90%;
-      margin-top: 20px;
-      border-radius: 10px;
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Therapy X - Professional Landing Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background: #2c3e50;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            margin-left: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('your-image.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 1rem 0;
+        }
+
+        .btn {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+
+        /* Features Section */
+        .features {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .feature {
+            padding: 2rem;
+            margin: 1.5rem 0;
+            background: #f5f5f5;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #4CAF50;
+            margin-right: 2rem;
+        }
+
+        .feature-content {
+            flex: 1;
+        }
+
+        /* Call to Action */
+        .cta {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 4rem;
+        }
+
+        a.footer-link {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .feature {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .feature-icon {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">Light Therapy X</div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </nav>
+        </div>
+    </header>
 
-  <header>
-    <h1>Light Therapy X</h1>
-    <p>Revive your skin and boost your confidence with science-backed light therapy!</p>
-    <a href="https://andbalanced.com/products/light-therapy-x-v1-1-dg#aff=Mithkum99" class="btn">Claim Offer Now</a>
-  </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Innovative Light Therapy Solution</h1>
+            <p>Experience the future of light therapy with our cutting-edge technology</p>
+            <button class="btn">Explore Now</button>
+        </div>
+    </section>
 
-  <div class="section">
-    <h2>Why Light Therapy X?</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>FDA-Approved</h3>
-        <p>Safe and tested for all skin types.</p>
-      </div>
-      <div class="feature">
-        <h3>Visible Results</h3>
-        <p>See noticeable skin glow in just 14 days.</p>
-      </div>
-      <div class="feature">
-        <h3>Portable & Rechargeable</h3>
-        <p>Use it anytime, anywhere—cord-free comfort.</p>
-      </div>
-    </div>
-    <img src="https://cdn.shopify.com/s/files/1/0680/4150/7113/files/skin_device_usage.jpg" alt="Using the Light Therapy Device">
-  </div>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <div class="feature-icon">💡</div>
+            <div class="feature-content">
+                <h2>Advanced Technology</h2>
+                <p>Our state-of-the-art light technology provides unmatched precision and effectiveness.</p>
+            </div>
+        </div>
 
-  <div class="section">
-    <h2>Before & After</h2>
-    <img src="https://cdn.shopify.com/s/files/1/0680/4150/7113/files/beforeafterlight.jpg" alt="Before and After">
-  </div>
+        <div class="feature">
+            <div class="feature-icon">🔬</div>
+            <div class="feature-content">
+                <h2>Clinically Proven Results</h2>
+                <p>Backed by scientific research and approved by leading dermatologists worldwide.</p>
+            </div>
+        </div>
 
-  <div class="section">
-    <h2>Ready for Radiant Skin?</h2>
-    <a href="https://andbalanced.com/products/light-therapy-x-v1-1-dg#aff=Mithkum99" class="btn">Buy Now via Affiliate</a>
-  </div>
+        <div class="feature">
+            <div class="feature-icon">🌟</div>
+            <div class="feature-content">
+                <h2>User-Friendly Design</h2>
+                <p>Intuitive interface makes it easy to customize your light therapy experience.</p>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    &copy; 2025 Light Therapy X | Partnered with Mithkum99 Affiliate Network
-  </footer>
+    <!-- Call to Action -->
+    <section class="cta">
+        <h2>Ready to Transform Your Experience?</h2>
+        <button class="btn">Start Your Journey</button>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Light Therapy X. All rights reserved.</p>
+        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Terms of Service</a>
+    </footer>
 </body>
 </html>
